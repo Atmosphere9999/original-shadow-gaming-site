@@ -1,0 +1,60 @@
+h1, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: goldenrod;
+    text-align: center;
+    width: 100%;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: 200;
+    font-style: normal;
+}
+/* Site Nav Bar - Followed this in the Book */
+
+nav.sitenavigation {
+    width: 18%;
+    padding: 5% 1%;
+    color: #34180f;
+    float: right;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.nav-menu-button {
+    float: right;
+}
+nav.sitenavigation ul {
+    border: 3px solid #34180f;
+    display: none;
+    background-color: #B8944D;
+    position: absolute;
+    right: 5%;
+    top: 70%;
+    z-index: 2;
+}
+/* Standard Screen Styles - Followed In The Book */
+
+@media screen and (min-width: 880px) {
+    header {
+        float: none;
+        width: auto;
+    }
+    div.nav-menu-button {
+        display: none;
+    }
+    nav.sitenavigation {
+        width: 100%;
+        padding: 0%;
+    }
+    nav.sitenavigation ul {
+        border: none;
+        width: 100%;
+        display: block;
+        position: static;
+        text-align: center;
+    }
+    nav.sitenavigation li {
+        display: inline-block;
+    }
+}
